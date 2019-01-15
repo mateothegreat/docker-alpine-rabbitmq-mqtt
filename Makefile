@@ -1,4 +1,4 @@
-IMAGE		?= mateothegreat/docker-alpine-rabbitmq:v1
+IMAGE		?= mateothegreat/docker-alpine-rabbitmq-mqtt:v1
 
 build:
 

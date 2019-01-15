@@ -15,3 +15,9 @@ RUN rabbitmq-plugins enable --offline rabbitmq_mqtt
 # https://www.rabbitmq.com/web-mqtt.html
 #
 RUN rabbitmq-plugins enable --offline rabbitmq_web_mqtt
+
+#
+# STOMP Plugin
+# https://www.rabbitmq.com/stomp.html
+#
+RUN rabbitmq-plugins enable --offline rabbitmq_stomp

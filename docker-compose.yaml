@@ -2,17 +2,20 @@ version: '3.7'
 
 services:
 
-    rabbitmq:
+  rabbitmq:
 
-        build:
+    restart: always
 
-            context: .
+    build:
 
-        container_name: rabbitmq
+      context: .
 
-        image: mateothegreat/docker-alpine-rabbitmq-mqtt:v1
+    container_name: rabbitmq
 
-        ports:
+    image: mateothegreat/docker-alpine-rabbitmq-mqtt:v1
 
-            - 5672:5672
-            - 15672:15672
+    ports:
+
+      - 5672:5672
+      - 15672:15672
+      - 61613:61613
