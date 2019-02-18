@@ -1,4 +1,4 @@
-FROM rabbitmq:3.7.8-alpine
+FROM rabbitmq:3.7.9-management-alpine
 
 #
 # Management Plugin
